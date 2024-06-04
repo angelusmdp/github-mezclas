@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MA - Inspiración</title>
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
     <!--LINK CSS-->
 
     <link rel="stylesheet" href="../css/style.css">
@@ -13,16 +15,16 @@
 
     <!--Título, logo y redes sociales en el encabezado de la página-->
 <body>
-    
     <header>
 
-        <div>
-            <a href="http://www.google.com/" target="_blank"><img src="../assets/buscar.jpg" alt="buscar" class="buscador">
-        </div>
+        <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar en la página" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
         
         <img src="../assets/logo_ma.png" alt="mezclas_logo" class="mezclas_logo">
 
-        <div>
+        <div class="redes">
             <a href="https://www.facebook.com/" target="_blank"><img src="../assets/facebook_2.png" alt="logo_facebook" class="facebook_logo"></a>
             <a href="https://www.instagram.com/" target="_blank"><img src="../assets/instagram_2.png" alt="logo_instagram" class="instagram_logo"></a>
             <a href="https://www.tiktok.com/explore?lang=es" target="_blank"><img src="../assets/tiktok.png" alt="logo_tiktok" class="tiktok_logo"></a>
@@ -32,44 +34,54 @@
     </header>
 
     <section>
-        <nav>
-            <ul>
-                <li>
-                    <a href="../index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="../html/blends.html">Blends</a>
-                </li>
-                <li>
-                    <a href="../html/accesorios.html">Accesorios</a>
-                </li>
-                <li>
-                    <a href="../html/inspiracion.html">Inspiración</a>
-                </li>
-                <li>
-                    <a href="../html/contacto.html">Contacto</a>
-                </li>
-            </ul>
-
-        </nav>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../html/blends.html">Blends</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../html/accesorios.html">Accesorios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../html/inspiracion.html">Inspiración</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../html/contacto.html">Contacto</a>
+                  </li>
+                </ul>
+                
+              </div>
+            </div>
+          </nav>          
     </section>
 
-        <Main>
+    <main>
         
-            <section>
-                <h1>¿Cómo preparar un buen té?</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni molestias recusandae minima atque voluptates temporibus animi! Rem fuga consectetur maiores eligendi accusamus quibusdam quam non nobis aperiam eos, unde ipsam.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe ea ullam placeat, quia eligendi tempora architecto error magni ut molestiae iure minus id unde alias labore cumque temporibus odio earum.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta dicta rerum tenetur harum id hic placeat excepturi voluptas deleniti! Dolorum facere quam dolore excepturi laudantium fugit inventore nihil vel ducimus?</p>
-            </section>
+        <section>
+            <h1>¿Cómo preparar un buen té?</h1>
+            <p>Preparar una taza de té es mucho más que seguir una serie de pasos; es un ritual que nos invita a detenernos, relajarnos y disfrutar de un momento de calma en medio de la vorágine diaria. La elección del té, la temperatura del agua, el tiempo de infusión y hasta el ambiente en el que lo disfrutamos, son elementos que contribuyen a crear una experiencia única y personal. El momento de preparar y degustar un buen té es una oportunidad para conectarnos con nosotros mismos, con la naturaleza y con las tradiciones milenarias que han hecho de esta bebida un símbolo de serenidad y reflexión en todo el mundo. A continuación, te ofrecemos una guía detallada para que puedas descubrir y disfrutar al máximo de cada taza de té.</p>
+        </section>
 
-        </Main>
+    </main>
 
-        <div>
-            <img src="../assets/tetera.webp" alt="kit_de_te">
-        </div>
+    <div>
+        <img src="../assets/tetera.webp" alt="kit_de_te">
+    </div>
 
-        <footer>
-            <h3>Todos los derechos reservados - 2024</h3>
-        </footer>
+    <footer>
+            <h2>Todos los derechos reservados - 2024</h2>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 </body>
 </html>
