@@ -53,7 +53,7 @@
     header{
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: auto;
@@ -62,11 +62,12 @@
 
     .d-flex{
         padding-right: 10rem;
+        padding-left: 5rem;
     }
 
     .redes{
         padding-left: 8rem;
-        padding-right: 2rem;
+        padding-right: 5rem;
     }
 }
 
@@ -126,11 +127,25 @@ p{
     margin-right: 2rem;
 }
 
-section iframe{
-    margin-left: 2rem;
-    margin-right: 2rem;
+.video-responsive{
+    position: relative;
+    padding-bottom: 56.25%; /* 16/9 ratio */
+    padding-top: 30px; /* IE6 workaround*/
+    height: 0;
+    overflow: hidden;
 }
-
+    
+.video-responsive iframe,
+.video-responsive object,
+.video-responsive embed{
+    position: absolute;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
 footer{
     color: black;
@@ -139,8 +154,20 @@ footer{
 }
 
 .grid-container{
-    border: 1px solid black
+    display: grid;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 15px;
+    column-gap: 15px;
 }
+
+.grid-item{
+    background-size: cover;
+    background-position: center;
+}
+
 
 .grid-container-blends{
     display:grid;
@@ -148,6 +175,12 @@ footer{
 
     row-gap: 15px;
     column-gap: 15px;
+}
+
+.first-item{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
 }
 
 .item-1{
@@ -175,3 +208,4 @@ div form{
     margin-left: 2rem;
     margin-right: 2rem;
 }
+
