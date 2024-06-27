@@ -22,6 +22,31 @@
         margin-bottom: 1rem;
     }
 
+    .facebook_logo:hover{
+        animation-name: logo_opacidad;
+        animation-timing-function: ease-in;
+        animation-duration: 1s;
+    }
+
+    .instagram_logo:hover{
+        animation-name: logo_opacidad;
+        animation-timing-function: ease-in;
+        animation-duration: 1s;
+    }
+
+    .tiktok_logo:hover{
+        animation-name: logo_opacidad;
+        animation-timing-function: ease-in;
+        animation-duration: 1s;
+    }
+
+    .twiter_logo:hover{
+        animation-name: logo_opacidad;
+        animation-timing-function: ease-in;
+        animation-duration: 1s;
+    }
+
+
     .mezclas_logo{
         margin-left: auto;
         margin-right: auto;
@@ -64,6 +89,30 @@
         padding-right: 1rem;
     }
 
+    .facebook_logo:hover{
+        animation-name: logo_opacidad;
+        animation-timing-function: ease-in;
+        animation-duration: 1s;
+    }
+
+    .instagram_logo:hover{
+        animation-name: logo_opacidad;
+        animation-timing-function: ease-in;
+        animation-duration: 1s;
+    }
+
+    .tiktok_logo:hover{
+        animation-name: logo_opacidad;
+        animation-timing-function: ease-in;
+        animation-duration: 1s;
+    }
+
+    .twiter_logo:hover{
+        animation-name: logo_opacidad;
+        animation-timing-function: ease-in;
+        animation-duration: 1s;
+    }
+
     img{
         width: 300px;
     }
@@ -89,6 +138,30 @@
     .redes{
         padding-left: 8rem;
         padding-right: 5rem;
+    }
+
+    .facebook_logo:hover{
+        animation-name: logo_opacidad;
+        animation-timing-function: ease-in;
+        animation-duration: 1s;
+    }
+
+    .instagram_logo:hover{
+        animation-name: logo_opacidad;
+        animation-timing-function: ease-in;
+        animation-duration: 1s;
+    }
+
+    .tiktok_logo:hover{
+        animation-name: logo_opacidad;
+        animation-timing-function: ease-in;
+        animation-duration: 1s;
+    }
+
+    .twiter_logo:hover{
+        animation-name: logo_opacidad;
+        animation-timing-function: ease-in;
+        animation-duration: 1s;
     }
 
     img{
@@ -140,6 +213,12 @@ h1{
     margin-left: 2rem;
     margin-right: 2rem;
     margin-bottom: 3rem;
+}
+
+h1:hover{
+    animation-name: texto_negrita;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
 }
 
 h2{
@@ -272,4 +351,36 @@ footer{
 
 .contacto_tabla{
     margin-top: 3rem;
+}
+
+@keyframes logo_opacidad {
+    0% {
+        opacity: 0.25;
+    }
+
+    25% {
+        opacity: 0.40;
+    }
+
+    50% {
+        opacity: 0.60;
+    }
+
+    75% {
+        opacity: 0.80;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes texto_negrita {
+    0% {
+        font-weight: lighter;
+    }
+
+    100% {
+        font-weight: bolder;
+    }
 }
